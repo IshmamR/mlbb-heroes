@@ -1,0 +1,65 @@
+.Card {
+	margin: 15px 25px;
+	max-width: 220px;
+}
+
+.Tilt {
+	border-radius: 10px;
+	overflow: hidden !important;
+	box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.Titl:hover {
+	box-shadow: 20px 55px 100px -5px rgba(0, 0, 0, 0.2);
+}
+.Card-img {
+	border-radius: 10px;
+	position: relative;
+}
+
+
+.overlay {
+	position: absolute;
+	top: -10%; left: -20%;
+	width: 180%; height: 130%;
+	max-width: 450px; max-height: 500px;
+	background: rgba(255, 255, 255, 0.13);
+	background: linear-gradient(
+		to right, 
+		rgba(255, 255, 255, 0.13) 0%,
+		rgba(255, 255, 255, 0.13) 77%,
+		rgba(255, 255, 255, 0.5) 92%,
+		rgba(255, 255, 255, 0.0) 100%
+	);
+	opacity: 0;
+	transform: rotate(30deg);
+	pointer-events: auto;
+}
+
+.overlay:hover {
+	animation: shine 5s ease-in-out  infinite;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shine{
+	10% {
+		opacity: 1;
+		top: -20%;
+		left: -50%;
+		transition-property: left, top, opacity;
+		transition-duration: 0.7s, 0.7s, 0.15s;
+		transition-timing-function: ease;
+	}
+	100% {
+		opacity: 0;
+		top: -20%;
+		left: -50%;
+		transition-property: left, top, opacity;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	.Card {
+		margin: 15px auto;
+		max-width: 95%;
+	}
+}

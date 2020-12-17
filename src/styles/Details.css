@@ -1,0 +1,83 @@
+.Details {
+	width: 95%;
+	margin: auto;
+	padding: 10px;
+	color: #fff;
+}
+
+.Details h1 {
+	text-align: center;
+}
+.Details p {
+	font-size: larger;
+	font-weight: 600;
+}
+
+.main {
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.left { 
+	width: 300px;
+	max-width: 95%;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.hero-img {
+	margin: auto !important;
+	height: 330px;
+	width: 210px;
+}
+.hero-type {
+	display: block;
+	height: 20px;
+	max-width: 70px;
+	margin: 5px auto;
+	padding: 5px 10px;
+	background-color: #5D64D0;
+	border-radius: 15px;
+	border: 2px solid #eee;
+	font-weight: 700;
+}
+.bars {
+	width: 210px;
+	margin: auto;
+	padding: 15px;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.right {
+	width: 800px;
+	max-width: 95%;
+	padding: 10px 15px;
+	background-color: rgba(0,0,0,0.3);
+	border: 5px double rgba(100,100,100, 0.5);
+}
+
+.equipments {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: large;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.equipments img {
+	width: 50px;
+	margin: 0 10px;
+}
+.counter-hero {border-radius: 50%}
+
+.back {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	font-weight: 700;
+}
+.back a {
+	color: #fafafa;
+}

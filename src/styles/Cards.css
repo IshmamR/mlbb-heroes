@@ -1,0 +1,11 @@
+.Cards {
+	max-width: 95% !important;
+	padding: 20px;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	overflow: hidden !important;
+}
